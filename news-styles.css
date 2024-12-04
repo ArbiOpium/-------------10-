@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 18px;
+    color: #bbbbbb;
+}
+main {
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-section {
+    margin-top: 20px;
+}
+
+.news-item {
+    background-color: #1f1f1f;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.news-item h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+.news-item p {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+
+footer {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #444444;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer p {  
+    margin: 0;
+    font-size: 1em;
+    color: #bbbbbb;
+}
+.button {
+    --primary-color: #2b1055;
+    --secondary-color: #7597de;
+    --text-color: #ffffff;
+
+    padding: 0.5em;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.button img {
+    height: 30px; 
+    width: 30px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.button img:hover {
+    transform: scale(1.2); 
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+}
+
+.button:hover::before {
+    transform: translateX(0);
+}
+
+.button:hover {
+    color: var(--secondary-color);
+}
+
+.button:active {
+    transform: scale(0.95);
+    transition: 0.2s;
+}

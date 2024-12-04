@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4epuha Esports</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">4epuha Esports</div>
+        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+        <label for="burger-toggle" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
+            <a href="news.html" class="button">Новости</a>
+            <a href="ratings.html" class="button">Рейтинги</a>
+            <a href="stream.html" class="button">Трансляции</a>
+        </nav>
+        <div class="right-menu">
+            <a href="https://discord.gg/kmRAQTEf" target="_blank" aria-label="Discord" class="button">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-discord-2474805-2056094.png" alt="Discord Logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="main-banner">
+        <h1>Добро пожаловать в мир кибердисциплин!</h1>
+        <p>Следите за лучшими турнирами, командами и событиями прямо здесь.</p>
+    </div>
+    <section class="news-section">
+        <h2>Новости</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <h3>Турниры по CS:2</h3>
+                <p>Расписание всех предстоящих турниров. Не пропустите!</p>
+                <a href="https://bo3.gg/ru/tournaments/current" target="_blank" class="read-more">Читать больше</a>
+            </div>
+            <div class="news-item">
+                <h3>Новая мета в Dota 2</h3>
+                <p>Как патч 7.37 изменил игру? Подробный разбор.</p>
+                <a href="https://bo3.gg/ru/tournaments/current" target="_blank" class="read-more">Читать больше</a>
+            </div>
+            <div class="news-item">
+                <h3>Обновление Valorant</h3>
+                <p>Riot Games представили нового агента. Вот что мы знаем.</p>
+                <a href="#" class="read-more">Читать больше</a>
+            </div>
+        </div>
+    </section>
+    <section class="carousel-section">
+        <h2>Киберспортивная галерея</h2>
+        <div class="carousel">
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+            
+            <div class="slides">
+                <div class="slide" id="item1">
+                    <img src="https://clan.akamai.steamstatic.com/images/3381077/75c3204fcb2874385f7c3e1dafeb00003b76502e.png" alt="CS2 Championship">
+                    <p>Победа нашей национальной команды "NatusVincere" на первом в истории мейджоре по CS:2</p>
+                </div>
+                <div class="slide" id="item2">
+                    <img src="https://clan.cloudflare.steamstatic.com/images//3703047/04db0e2af5e77d1d501e46d48b7b86e0a173c421.jpg" alt="Dota 2 International">
+                    <p>Самые запоминающиеся моменты International</p>
+                </div>
+                <div class="slide" id="item3">
+                    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/e4a8d610dda015e55f109b9ac95c1a5b657f0224-1999x1334.jpg" alt="Valorant Masters">
+                    <p>Лучшие кадры турнира Valorant Masters</p>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+                <label for="slide3" class="control"></label>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 4epuha Awards. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

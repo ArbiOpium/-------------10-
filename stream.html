@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamSite</title>
+    <link rel="stylesheet" href="stream.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Добро пожаловать на платформу трансляций!</h1>
+            <p>Смотрите лучшие трансляции и оставайтесь в курсе событий.</p>
+            <nav>
+                <a href="ratings.html" class="button">Рейтинги</a>
+                <a href="index.html"    class="button">4epuha Esports</a>
+                <a href="news.html"    class="button">Новости</a>
+            </nav>
+        </div>
+    </header>
+    <section id="streams" class="streams-section">
+        <h2>Трансляции</h2>
+        <div class="streams-grid">
+            <div class="stream-card">
+                <iframe 
+                    src="https://www.youtube.com/example_channel" 
+                    title="Прямая трансляция"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media">
+                </iframe>
+                <h3>Название трансляции 1</h3>
+                <p>Описание трансляции.</p>
+            </div>
+            <div class="stream-card">
+                <iframe 
+                    src="https://twitch.tv/example_channel" 
+                    title="Прямая трансляция"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media">
+                </iframe>
+                <h3>Название трансляции 2</h3>
+                <p>Описание трансляции.</p>
+            </div>
+        </div>
+    </section>
+    <section id="schedule" class="schedule-section">
+        <h2>Расписание трансляций</h2>
+        <ul class="schedule-list">
+            <li>CS:2 Турнир — 20:00 (CET)</li>
+            <li>Dota 2 Финал — 22:00 (CET)</li>
+            <li>Valorant: Лига — 18:00 (CET)</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 4epuha Awards. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
